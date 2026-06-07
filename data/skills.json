@@ -1,32 +1,32 @@
 [
-    {
-        "image": "html-css.jpg",
-        "title": "HTML - CSS",
-        "text": "Intégration d’interfaces responsives et accessibles, utilisation de maquettes Figma, développement d’animations CSS"
-    },
-    {
-        "image": "js.jpg",
-        "title": "javascript",
-        "text": "Manipulation du DOM, création d’éléments dynamiques, gestion de données de formulaires"
-    },
-    {
-        "image": "react.jpg",
-        "title": "React",
-        "text": "Création d’applications React, création de composants et manipulation de leur état"
-    },
-    {
-        "image": "gestion-de-projet.png",
-        "title": "Gestion de projet",
-        "text": "Analyse des besoins d’un client, définition d’une solution technique répondant aux besoins fonctionnelle, planification du projet"
-    },
-    {
-        "image": "optimisation-et-debug.png",
-        "title": "Optimisation et debug",
-        "text": "Identification des anomalies et correction d’un site existant, optimisation SEO et performance et publication d’un site en ligne"
-    },
-    {
-        "image": "test.png",
-        "title": "Test",
-        "title ": "Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test et d’un rédaction d’un cahier de recette, automatisation de tests E2E et d’API"
-    }
+  {
+    "title": "HTML - CSS",
+    "image": "html-css.jpg",
+    "text": "Intégration d’interfaces responsives et accessibles, utilisation de maquettes Figma et développement d’animations CSS."
+  },
+  {
+    "title": "JavaScript",
+    "image": "js.jpg",
+    "text": "Manipulation du DOM, création d’éléments dynamiques et gestion des interactions utilisateur."
+  },
+  {
+    "title": "React",
+    "image": "react.jpg",
+    "text": "Création d’applications React, développement de composants et gestion du state."
+  },
+  {
+    "title": "Gestion de projet",
+    "image": "gestion-de-projet.png",
+    "text": "Analyse des besoins, rédaction de spécifications techniques et organisation Agile/Scrum."
+  },
+  {
+    "title": "Optimisation et debug",
+    "image": "optimisation-et-debug.png",
+    "text": "Correction d’anomalies, optimisation SEO, accessibilité et amélioration des performances."
+  },
+  {
+    "title": "Test logiciel",
+    "image": "test.png",
+    "text": "Création de plans de test, rédaction de cas de test et automatisation avec Cypress."
+  }
 ]

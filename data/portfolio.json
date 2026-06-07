@@ -1,20 +1,20 @@
 [
-    {
-        "image": "image1.png",
-        "title": "Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    },
-    {
-        "image": "image2.png",
-        "title": "Mon Vieux grimoire",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    },
-    {
-        "image": "image3.png",
-        "title": "Kasa",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    }
+  {
+    "title": "Eco Bliss Bath",
+    "image": "image1.jpg",
+    "text": "Campagne de test QA sur une application e-commerce : tests API, tests fonctionnels, scénarios panier, authentification et automatisation avec Cypress.",
+    "link": "https://github.com/michaelbelcas-arch/Eco-Bliss-Bath-V2"
+  },
+  {
+    "title": "Kasa React",
+    "image": "image2.png",
+    "text": "Développement d’une application React avec routing, composants réutilisables, responsive design et tests unitaires.",
+    "link": "https://github.com/michaelbelcas-arch/Projet-8---React"
+  },
+  {
+    "title": "Menu Maker",
+    "image": "image3.png",
+    "text": "Planification Agile d’un projet web : Kanban, spécifications techniques, veille technologique et organisation Scrum.",
+    "link": "https://app.notion.com/p/Kanban-Menu-maker-353db3abf1be80f39ebee686055d8b4a?p=353db3abf1be806cb6e6cef1065465a5&pm=s"
+  }
 ]
