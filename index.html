@@ -2,42 +2,35 @@
 <html lang="fr">
 
 <head>
-    <title>Portfolio - Michael Belcastro</title>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>Portfolio - Michael Belcastro</title>
     <meta
         name="description"
         content="Portfolio de Michael Belcastro, testeur logiciel junior spécialisé en QA, automatisation de tests Cypress et développement web."
-    />
+    >
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Bootstrap -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
 
-    <!-- Font Awesome -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    >
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
-    <!-- navbar -->
+    <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
         <div class="container">
-
-            <a class="navbar-brand" href="#">Michael Belcastro</a>
+            <a class="navbar-brand" href="#home">Michael Belcastro</a>
 
             <button
                 class="navbar-toggler"
@@ -46,13 +39,12 @@
                 data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
-                aria-label="Toggle navigation"
+                aria-label="Ouvrir le menu de navigation"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
@@ -68,7 +60,15 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#tools">Outils</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Projets</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#journey">Parcours</a>
                     </li>
 
                     <li class="nav-item">
@@ -76,7 +76,6 @@
                     </li>
 
                 </ul>
-
             </div>
         </div>
     </nav>
@@ -84,7 +83,14 @@
     <!-- HERO -->
     <section class="bgvideo" id="home">
 
-        <video autoplay muted loop playsinline id="background-video">
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+            id="background-video"
+            aria-hidden="true"
+        >
             <source src="images/background.mp4" type="video/mp4">
         </video>
 
@@ -95,12 +101,16 @@
                 <div class="col-lg-12 hero-text">
 
                     <h1 class="hero_title">
-                        Bienvenue sur le portfolio de Michaël Belcastro
+                        Michael Belcastro
                     </h1>
 
                     <p class="hero_desc">
-                        • Testeur logiciel junior • QA • Cypress •
+                        Testeur logiciel junior spécialisé en QA et automatisation Cypress
                     </p>
+
+                    <a href="#portfolio" class="btn btn-success hero-button">
+                        Voir mes projets
+                    </a>
 
                 </div>
             </div>
@@ -108,27 +118,23 @@
 
     </section>
 
-    <!-- ABOUT -->
+    <!-- A PROPOS -->
     <section id="about">
 
         <div class="container mt-4 pt-4">
 
-            <h2 class="text-center">
-                A propos
-            </h2>
+            <h2 class="text-center">A propos</h2>
 
-            <div class="row mt-4">
+            <div class="row mt-4 align-items-center">
 
-                <div class="col-lg-4">
-
+                <div class="col-lg-4 text-center">
                     <img
                         src="images/person.png"
                         class="imageAboutPage"
-                        alt="Photo de Michael Belcastro"
+                        alt="Portrait illustré de Michael Belcastro"
                         width="350"
                         height="350"
                     >
-
                 </div>
 
                 <div class="col-lg-8">
@@ -142,49 +148,57 @@
                     <div class="row mt-3">
 
                         <div class="col-md-6">
-
                             <ul>
                                 <li>Nom : Michael Belcastro</li>
                                 <li>Age : 33 ans</li>
                                 <li>Permis B</li>
                             </ul>
-
                         </div>
 
                         <div class="col-md-6">
-
                             <ul>
                                 <li>HTML / CSS / JavaScript</li>
                                 <li>React / Cypress</li>
                                 <li>Tests QA & automatisation</li>
                             </ul>
-
                         </div>
 
                     </div>
 
-                    <div class="row mt-3">
+                    <p>
+                        Durant ma formation, j’ai réalisé plusieurs projets en
+                        développement web et en assurance qualité logicielle :
+                        campagnes de test, rédaction de cas de test, automatisation
+                        avec Cypress, optimisation SEO et accessibilité.
+                    </p>
 
-                        <p>
-                            Durant ma formation, j’ai réalisé plusieurs projets en
-                            développement web et en assurance qualité logicielle :
-                            campagnes de test, rédaction de cas de test, automatisation
-                            avec Cypress, optimisation SEO et accessibilité.
-                        </p>
+                    <p>
+                        Mon objectif est aujourd’hui de rejoindre une équipe en tant
+                        que testeur logiciel junior afin de participer à la qualité
+                        et à la fiabilité des applications web.
+                    </p>
 
-                        <p>
-                            Mon objectif est aujourd’hui de rejoindre une équipe en tant
-                            que testeur logiciel junior afin de participer à la qualité
-                            et à la fiabilité des applications web.
-                        </p>
+                    <div class="text-center mt-4">
+
+                        <a
+                            href="cv-michael-belcastro.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-success cv-button me-2"
+                            aria-label="Consulter le CV de Michael Belcastro au format PDF"
+                        >
+                            Consulter mon CV
+                        </a>
+
                         <a
                             href="cv-michael-belcastro.pdf"
                             download
-                            class="btn btn-success mt-3"
+                            class="btn btn-outline-success cv-button"
+                            aria-label="Télécharger le CV de Michael Belcastro au format PDF"
                         >
-                            Télécharger mon CV
+                            Télécharger le CV
                         </a>
-        
+
                     </div>
 
                 </div>
@@ -195,27 +209,55 @@
 
     </section>
 
-    <!-- SKILLS -->
+    <!-- COMPETENCES -->
     <section id="skills">
 
         <div class="container">
 
-            <h2 class="text-center">
-                Mes compétences
-            </h2>
+            <h2 class="text-center">Mes compétences</h2>
 
         </div>
 
     </section>
 
-    <!-- PORTFOLIO -->
+    <!-- OUTILS -->
+    <section id="tools">
+
+        <div class="container">
+
+            <h2 class="text-center">Mes outils</h2>
+
+            <p class="text-center mb-5">
+                Les principaux outils et technologies que j’utilise dans mes projets de développement et de test logiciel.
+            </p>
+
+            <div class="toolsGrid">
+
+                <span class="toolBadge">Cypress</span>
+                <span class="toolBadge">JavaScript</span>
+                <span class="toolBadge">React</span>
+                <span class="toolBadge">HTML / CSS</span>
+                <span class="toolBadge">Git</span>
+                <span class="toolBadge">GitHub</span>
+                <span class="toolBadge">Docker</span>
+                <span class="toolBadge">API REST</span>
+                <span class="toolBadge">SQL</span>
+                <span class="toolBadge">Jira</span>
+                <span class="toolBadge">Notion</span>
+                <span class="toolBadge">Scrum</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJETS -->
     <section id="portfolio">
 
         <div class="container mt-3">
 
-            <h2 class="text-center">
-                Mes projets
-            </h2>
+            <h2 class="text-center">Mes projets</h2>
 
             <p class="text-center">
                 Voici quelques projets réalisés durant ma formation OpenClassrooms
@@ -226,70 +268,37 @@
 
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
+    <!-- PARCOURS -->
+    <section id="journey">
 
-        <div class="container mt-3 contactContent">
+        <div class="container">
 
-            <h2 class="text-center">
-                Contactez-moi
-            </h2>
+            <h2 class="text-center">Mon parcours</h2>
 
-            <div class="row">
+            <div class="timeline">
 
-                <div class="col-lg-3 col-md-6 mt-4 contactColumn">
-
-                    <i class="fa-solid fa-phone fa-4x"></i>
-
-                    <h3>Téléphone</h3>
-
-                    <p>07-81-51-16-05</p>
-
-                </div>
-                
-                <div class="col-lg-3 col-md-6 mt-4 contactColumn">
-
-                    <i class="fa-regular fa-envelope fa-4x"></i>
-
-                    <h3>Adresse email</h3>
-
-                    <p>michaelbelcastro01@gmail.com</p>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6 mt-4 contactColumn">
-
-                    <i class="fa-brands fa-linkedin-in fa-4x"></i>
-
-                    <h3>LinkedIn</h3>
-
+                <div class="timelineItem">
+                    <h3>2025 - 2026</h3>
                     <p>
-                        <a
-                            href="https://www.linkedin.com/in/michael-belcastro-7a9174407/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Voir mon LinkedIn
-                        </a>
+                        Formation Testeur Logiciel chez OpenClassrooms avec des projets
+                        en développement web, stratégie de test, automatisation et QA.
                     </p>
-
                 </div>
-                <div class="col-lg-3 col-md-6 mt-4 contactColumn">
 
-                    <i class="fa-brands fa-github fa-4x"></i>
-
-                    <h3>GitHub</h3>
-
+                <div class="timelineItem">
+                    <h3>Projets QA</h3>
                     <p>
-                        <a
-                            href="https://github.com/michaelbelcas-arch"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Voir mon GitHub
-                        </a>
+                        Réalisation de campagnes de test, rédaction de cas de test,
+                        tests API, tests fonctionnels et automatisation avec Cypress.
                     </p>
+                </div>
 
+                <div class="timelineItem">
+                    <h3>Objectif professionnel</h3>
+                    <p>
+                        Rejoindre une équipe en tant que testeur logiciel junior
+                        pour contribuer à la qualité, la fiabilité et l’accessibilité des applications web.
+                    </p>
                 </div>
 
             </div>
@@ -298,7 +307,79 @@
 
     </section>
 
-    <!-- JS -->
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <div class="container mt-3 contactContent">
+
+            <h2 class="text-center">Contactez-moi</h2>
+
+            <p class="text-center mb-5">
+                N'hésitez pas à me contacter pour échanger sur une opportunité, un projet ou simplement discuter qualité logicielle.
+            </p>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-3 col-md-6 mt-4">
+                    <a href="tel:0781511605" class="contactCard">
+                        <i class="fa-solid fa-phone fa-4x"></i>
+                        <h3>Téléphone</h3>
+                        <p>07 81 51 16 05</p>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4">
+                    <a
+                        href="mailto:michaelbelcastro01@gmail.com"
+                        class="contactCard"
+                    >
+                        <i class="fa-regular fa-envelope fa-4x"></i>
+                        <h3>Email</h3>
+                        <p>Envoyer un email</p>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4">
+                    <a
+                        href="https://www.linkedin.com/in/michael-belcastro-7a9174407/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contactCard"
+                    >
+                        <i class="fa-brands fa-linkedin-in fa-4x"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Voir mon profil</p>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4">
+                    <a
+                        href="https://github.com/michaelbelcas-arch"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contactCard"
+                    >
+                        <i class="fa-brands fa-github fa-4x"></i>
+                        <h3>GitHub</h3>
+                        <p>Voir mes projets</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Michael Belcastro - Portfolio Testeur Logiciel Junior
+        </p>
+
+    </footer>
+
     <script src="script/script.js"></script>
 
 </body>
