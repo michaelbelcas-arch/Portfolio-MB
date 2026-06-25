@@ -1,5 +1,7 @@
 /******* GENERAL *******/
 
+/* Espacement général des sections */
+
 #about,
 #skills,
 #tools,
@@ -10,6 +12,8 @@
     padding-top: 4rem;
 }
 
+/* Titres des sections */
+
 #about h2,
 #skills h2,
 #tools h2,
@@ -19,23 +23,33 @@
     margin-bottom: 3rem;
 }
 
+/* Bas de page */
+
 #contact {
     padding-bottom: 4rem;
 }
 
-body {
+/* Scroll fluide */
+
+html {
     scroll-behavior: smooth;
 }
 
 /******* NAVBAR *******/
 
+/* Fond de la navbar */
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.85);
 }
 
+/* Navbar après scroll */
+
 .navbarScroll.navbarDark {
     background-color: #1f1f1f;
 }
+
+/* Liens navbar */
 
 .navbar .navbar-brand,
 .navbar .nav-link {
@@ -47,7 +61,29 @@ body {
     color: #d4f8e8 !important;
 }
 
+/******* LOGO NAVBAR *******/
+
+.navbar-logo {
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.desktop-logo {
+    height: 50px;
+}
+
+.mobile-logo {
+    display: none;
+    height: 45px;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
+}
+
 /******* HERO VIDEO *******/
+
+/* Section accueil */
 
 .bgvideo {
     position: relative;
@@ -55,26 +91,39 @@ body {
     overflow: hidden;
 }
 
+/* Vidéo de fond */
+
 #background-video {
     position: absolute;
     top: 50%;
     left: 50%;
+
     min-width: 100%;
     min-height: 100%;
+
     object-fit: cover;
+
     transform: translate(-50%, -50%);
+
     z-index: -2;
 }
+
+/* Overlay sombre */
 
 .overlay {
     position: absolute;
     inset: 0;
+
     background: rgba(0, 0, 0, 0.65);
+
     z-index: -1;
 }
 
+/* Contenu Hero */
+
 .hero-text {
     height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,98 +133,165 @@ body {
     text-align: center;
 }
 
-.hero_title {
-    font-size: 4.5rem;
-    font-weight: bold;
+/******* HERO LOGO *******/
+
+/* Logo principal */
+
+.hero-logo {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+
+    margin-bottom: 20px;
+
+    filter: drop-shadow(
+        0 0 25px rgba(0, 255, 255, 0.25)
+    );
 }
+
+/* H1 principal */
+
+.hero_title {
+    font-size: 3rem;
+    font-weight: 700;
+
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+/* Sous-titre */
 
 .hero_desc {
     max-width: 850px;
-    margin-top: 20px;
 
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+
+    color: white;
 }
+
+/* Nom complet conservé pour le SEO */
+
+.seo-subtitle {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Bouton Hero */
 
 .hero-button {
     margin-top: 25px;
+
     padding: 12px 30px;
+
     border-radius: 30px;
+
     font-weight: 600;
 }
 
 /******* ABOUT *******/
+
+/* Photo profil */
 
 .imageAboutPage {
     width: 100%;
     max-width: 350px;
 
     border-radius: 50%;
+
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
 
+/* Boutons CV */
+
 .cv-button {
     padding: 10px 28px;
+
     font-size: 1rem;
+
     border-radius: 8px;
 }
 
 /******* SKILLS *******/
 
+/* Cartes compétences */
+
 .skillsText.card {
     height: 350px;
 
     cursor: default;
+
     border: 1px solid #ddd;
 
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 }
+
+/* Animation compétences */
 
 .skillsText.card:hover {
-    cursor: default;
-
     transform: translateY(-8px);
+
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
     border-color: #198754;
 }
+
+/* Images compétences */
 
 .skillsText img {
     width: 100%;
     height: 150px;
 
     object-fit: contain;
+
     margin-bottom: 20px;
 }
+
+/* Texte compétences */
 
 #skills p {
     text-align: center;
 }
 
+/* Titres cartes */
+
 .card-title {
     text-align: center;
 }
 
-/******* TOOLS *******/
+/******* OUTILS *******/
 
 #tools {
     background-color: #f8f9fa;
     padding-bottom: 4rem;
 }
 
+/* Conteneur badges */
+
 .toolsGrid {
     display: flex;
     flex-wrap: wrap;
+
     justify-content: center;
+
     gap: 15px;
 }
+
+/* Badge outil */
 
 .toolBadge {
     padding: 12px 22px;
 
     background-color: #ffffff;
+
     border: 1px solid #198754;
     border-radius: 30px;
 
     color: #198754;
+
     font-weight: 600;
 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -183,8 +299,11 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Hover badge */
+
 .toolBadge:hover {
     background-color: #198754;
+
     color: #ffffff;
 
     transform: translateY(-4px);
@@ -196,62 +315,84 @@ body {
     text-align: center;
 }
 
+/* Cartes projets */
+
 .portfolioContent {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .portfolioContent:hover {
     transform: translateY(-8px);
+
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /******* JOURNEY *******/
 
+/* Timeline */
+
 .timeline {
     max-width: 900px;
+
     margin: 0 auto;
 }
 
-.timelineItem {
-    position: relative;
+/* Bloc timeline */
 
+.timelineItem {
     margin-bottom: 25px;
+
     padding: 25px 30px;
 
     background-color: #ffffff;
+
     border-left: 5px solid #198754;
+
     border-radius: 12px;
 
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
 }
 
+/* Titres timeline */
+
 .timelineItem h3 {
     color: #198754;
+
     margin-bottom: 10px;
 }
 
 /******* CONTACT *******/
 
+/* Carte contact */
+
 .contactCard {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     justify-content: center;
+    align-items: center;
 
     height: 260px;
+
     padding: 30px;
 
     text-align: center;
     text-decoration: none;
+
     color: inherit;
 
     background: #ffffff;
+
     border-radius: 15px;
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 
     transition: all 0.3s ease;
 }
+
+/* Hover cartes contact */
 
 .contactCard:hover {
     transform: translateY(-8px);
@@ -263,8 +404,11 @@ body {
     color: inherit;
 }
 
+/* Icônes contact */
+
 .contactCard i {
     color: #198754;
+
     margin-bottom: 20px;
 
     transition: transform 0.3s ease;
@@ -274,13 +418,19 @@ body {
     transform: scale(1.1);
 }
 
+/* Titre contact */
+
 .contactCard h3 {
     margin-bottom: 10px;
 }
 
+/* Texte contact */
+
 .contactCard p {
     margin: 0;
+
     color: #666;
+
     word-break: break-word;
 }
 
@@ -290,6 +440,7 @@ body {
     padding: 25px 15px;
 
     background-color: #1f1f1f;
+
     color: #ffffff;
 
     text-align: center;
@@ -302,18 +453,44 @@ body {
 /******* RESPONSIVE *******/
 
 @media screen and (max-width: 768px) {
-    .hero_title {
-        font-size: 2.8rem;
+
+    /* Logo Hero */
+
+    .hero-logo {
+        max-width: 350px;
     }
 
+    /* Titre principal */
+
+    .hero_title {
+        font-size: 2rem;
+    }
+
+    /* Sous-titre */
+
     .hero_desc {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+
         padding: 0 20px;
     }
+
+    /* Logo navbar */
+
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    /* Cartes compétences */
 
     .skillsText.card {
         height: auto;
     }
+
+    /* Boutons CV */
 
     .cv-button {
         margin-top: 10px;
