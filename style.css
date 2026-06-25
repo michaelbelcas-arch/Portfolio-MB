@@ -197,9 +197,19 @@ html {
     width: 100%;
     max-width: 350px;
 
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
     border-radius: 50%;
 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+.imageAboutPage:hover {
+    transform: scale(1.03);
 }
 
 /* Boutons CV */
